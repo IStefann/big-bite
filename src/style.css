@@ -96,10 +96,11 @@ button:hover {
 
 .center {
     align-items: center;
+}
+#content{
     height: 100%;
 }
-
-.card {
+.card, .cardContact {
     background-color: #000000;
     opacity: 0.8;
     color: #BA7931;
@@ -130,7 +131,7 @@ button:hover {
     font-size: 1.2rem;
 }
 
-img {
+li>img {
     width: 30rem;
     filter: drop-shadow(0 0 15px orange);
 }
@@ -194,4 +195,53 @@ ul {
     height: 100%;
     gap: 10rem;
     animation: animation 0.5s ease-in-out;
+}
+
+.cardContact{
+    animation: animation 0.5s ease-in-out;
+    width: 50rem;
+    height: 40rem;
+    padding:2rem;
+}
+
+iframe{
+    border-radius: 20px;
+    width: 40rem;
+}
+
+.contactTitle{
+    font-size: 5rem;
+    align-self: center;
+    font-weight: bold;
+    font-family: "Potta One", serif;
+}
+.cardContact > .bolder{
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.cardContact > .lighter{
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+
+}
+a:hover, footer>img:hover{
+    color: #BA7931;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: "Potta one", sans-serif;
+    cursor: pointer;
+}
+footer>img{
+    width: 3.2rem;
 }

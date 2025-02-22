@@ -1,6 +1,7 @@
-import "./style.css";
+ import "./style.css";
 import { homeLoad } from "./main.js";
 import { menuLoad } from "./menu.js";
+import { loadContact } from "./contact.js";
 
 const buttonHome = document.querySelector("#home");
 const buttonMenu = document.querySelector("#menu");
@@ -16,7 +17,7 @@ buttons.forEach(button => {
         button.classList.add("active");
         if(button.id === "home") homeLoad();
         if(button.id === "menu") menuLoad();
-        if(button.id === "contact") console.log("temp");
+        if(button.id === "contact") loadContact();
     })
 });
 

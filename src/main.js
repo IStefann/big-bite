@@ -1,6 +1,9 @@
 function homeLoad()
 {
     const contentDiv = document.querySelector("#content");
+    const background = document.querySelector(".background");
+   
+    background.classList.remove("blur");
 
     const mainDiv = document.createElement("div");
     const title = document.createElement("h1");

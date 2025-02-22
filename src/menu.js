@@ -6,6 +6,10 @@ import shwarma from "./shwarma.png";
 
 function menuLoad() {
     const content = document.querySelector("#content");
+    const background = document.querySelector(".background");
+   
+    if(background.className !== "blur")
+    background.classList.add("blur");
 
     const arrowLeft = document.createElement("div");
     const arrowRight = document.createElement("div");
